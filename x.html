@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Blog</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #1a1a2e;
+      color: #ffffff;
+    }
+
+    .navbar {
+      background-color: #2a2a5b;
+    }
+
+    .hero {
+      background-color: #6b144d;
+      color: #ffffff;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+    }
+
+    .grid-section {
+      background: url('bg.webp') no-repeat center center/cover;
+      padding: 40px 0;
+    }
+
+    .card {
+      background-color: #2a2a5b;
+      border: none;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      color: #ffffff;
+    }
+
+    .btn-read-more {
+      background-color: #6a5acd;
+      color: #ffffff;
+      border: none;
+    }
+
+    .btn-read-more:hover {
+      background-color: #8470ff;
+    }
+
+    .pagination .page-item .page-link {
+      background-color: #3c3c80;
+      color: #ffffff;
+      border: none;
+    }
+
+    .pagination .page-item .page-link:hover {
+      background-color: #6a5acd;
+    }
+
+    .contact-section {
+      padding: 40px 0;
+    }
+
+    .form-control {
+      background-color: #2a2a5b;
+      color: #fff;
+    }
+
+    .btn-submit {
+      background-color: #6a5acd;
+      color: #ffffff;
+      border: none;
+    }
+
+    .btn-submit:hover {
+      background-color: #8470ff;
+    }
+
+    .form-output {
+      margin-top: 30px;
+      background-color: #2a2a5b;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #2a2a5b;
+      padding: 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Delightful Recipes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Scroll for Recipes</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#contactForm">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="text-center">
+      <h1>Welcome to Scrumptious Food</h1>
+      <p>Your daily dose of delicious recipes and food tips!</p>
+    </div>
+  </div>
+<div>
+<p style="background-color: black; color: white; text-align: center; font-family: 'Times New Roman', serif; font-size: 24px;">
+  Indian cuisine is a vibrant and diverse blend of flavors, colors, and textures. With its rich history and regional variations, the food of India is as varied as its culture. From the spicy and tangy curries of the north to the fragrant rice dishes and seafood delicacies of the south, Indian food offers something for every palate. Popular dishes like Butter Chicken, Biryani, and Dosas are just a few examples of how Indian cooking combines aromatic spices, fresh ingredients, and unique cooking techniques to create unforgettable meals. Whether you're a fan of vegetarian dishes, seafood, or meat-based curries, Indian cuisine has something to offer that will tantalize your taste buds and leave you craving more.
+</p>
+  </div>
+
+  <!-- Grid Section for Blog Posts -->
+  <div class="grid-section" id="indianCuisine">
+    <div class="container">
+      <h3 class="text-center text-white mb-4" style="background-color: black;">Indian Cuisine</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="indian1.jpg" alt="Indian Food" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Delicious Biryani</h5>
+              <p class="card-text">Learn to make a rich and flavorful Biryani.</p>
+              <a href="https://en.wikipedia.org/wiki/Biryani" class="btn btn-read-more" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="indian2.jpg" alt="Indian Food" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Butter Chicken</h5>
+              <p class="card-text">Discover the secrets behind the creamy Butter Chicken.</p>
+              <a href="https://en.wikipedia.org/wiki/Butter_chicken" class="btn btn-read-more" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="indian3.jpg" alt="Indian Food" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Dosa</h5>
+              <p class="card-text">A guide to making authentic Dosa.</p>
+              <a href="https://en.wikipedia.org/wiki/Dosa_(food)" class="btn btn-read-more" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form Section -->
+  <div class="contact-section" id="contactForm">
+    <div class="container">
+      <h3 class="text-center text-white mb-4">Contact Us</h3>
+      <form id="contactFormElement">
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Output Section for Submitted Form -->
+  <div class="form-output container" id="outputSection" style="display:none;">
+    <h4 class="text-center text-white">Submitted Information</h4>
+    <p><strong>Name:</strong> <span id="outputName"></span></p>
+    <p><strong>Email:</strong> <span id="outputEmail"></span></p>
+    <p><strong>Message:</strong> <span id="outputMessage"></span></p>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Delightful Recipes. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script to handle form submission and display input below -->
+  <script>
+    document.getElementById("contactFormElement").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Get the input values
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      // Display the submitted information
+      document.getElementById("outputName").textContent = name;
+      document.getElementById("outputEmail").textContent = email;
+      document.getElementById("outputMessage").textContent = message;
+
+      // Show the output section
+      document.getElementById("outputSection").style.display = "block";
+    });
+  </script>
+</body>
+
+</html>
+
